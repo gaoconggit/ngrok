@@ -9,9 +9,9 @@
             "type": "go",
             "request": "launch",
             "mode": "debug",
-            "program": "${file}"
+            "program": "${file}",
+            "buildFlags": "-tags=debug",
+            "args": ["-config","${workspaceFolder}/debug.yml","-log","ngrok.log","start","test"]
         }
-     
-     
     ]
 }

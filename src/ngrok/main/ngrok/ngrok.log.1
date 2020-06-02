@@ -1,0 +1,85 @@
+[2020/06/02 12:46:37 CST] [INFO] (ngrok/log.Info:112) Reading configuration file D:\project\learn\golang\fork_ngrok\ngrok/debug.yml
+[2020/06/02 12:48:36 CST] [INFO] (ngrok/log.(*PrefixLogger).Info:83) [client] Trusting root CAs: [assets/client/tls/ngrokroot.crt assets/client/tls/snakeoilca.crt]
+[2020/06/02 12:48:53 CST] [INFO] (ngrok/log.(*PrefixLogger).Info:83) [view] [web] Serving web interface on 127.0.0.1:4040
+[2020/06/02 12:49:07 CST] [INFO] (ngrok/log.(*PrefixLogger).Info:83) [view] [term] Resize event, redrawing
+[2020/06/02 12:49:14 CST] [DEBG] (ngrok/log.(*PrefixLogger).Debug:79) [view] [term] Waiting for update
+[2020/06/02 12:49:14 CST] [DEBG] (ngrok/log.(*PrefixLogger).Debug:79) [ctl:26cf9f83] New connection to: 127.0.0.1:4443
+[2020/06/02 12:49:14 CST] [DEBG] (ngrok/log.(*PrefixLogger).Debug:79) [ctl:26cf9f83] Writing message: {"Type":"Auth","Payload":{"Version":"2","MmVersion":"1.7","User":"","Password":"","OS":"windows","Arch":"amd64","ClientId":""}}
+[2020/06/02 12:49:14 CST] [DEBG] (ngrok/log.(*PrefixLogger).Debug:79) [view] [term] Waiting for update
+[2020/06/02 12:49:14 CST] [DEBG] (ngrok/log.(*PrefixLogger).Debug:79) [ctl:26cf9f83] Waiting to read message
+[2020/06/02 12:49:14 CST] [DEBG] (ngrok/log.(*PrefixLogger).Debug:79) [ctl:26cf9f83] Reading message with length: 120
+[2020/06/02 12:49:14 CST] [DEBG] (ngrok/log.(*PrefixLogger).Debug:79) [ctl:26cf9f83] Read message {"Type":"AuthResp","Payload":{"Version":"2","MmVersion":"1.7","ClientId":"0aab0a54dfed388c4c822a2c44f6618a","Error":""}}
+[2020/06/02 12:49:14 CST] [INFO] (ngrok/log.(*PrefixLogger).Info:83) [client] Authenticated with server, client id: 0aab0a54dfed388c4c822a2c44f6618a
+[2020/06/02 12:49:14 CST] [DEBG] (ngrok/log.(*PrefixLogger).Debug:79) [view] [term] Waiting for update
+[2020/06/02 12:49:14 CST] [DEBG] (ngrok/log.(*PrefixLogger).Debug:79) [ctl:26cf9f83] Writing message: {"Type":"ReqTunnel","Payload":{"ReqId":"d48863d93412ab40","Protocol":"http","Hostname":"","Subdomain":"test","HttpAuth":"","RemotePort":0}}
+[2020/06/02 12:49:14 CST] [DEBG] (ngrok/log.(*PrefixLogger).Debug:79) [ctl:26cf9f83] Waiting to read message
+[2020/06/02 12:49:14 CST] [DEBG] (ngrok/log.(*PrefixLogger).Debug:79) [ctl:26cf9f83] Reading message with length: 32
+[2020/06/02 12:49:14 CST] [DEBG] (ngrok/log.(*PrefixLogger).Debug:79) [ctl:26cf9f83] Read message {"Type":"ReqProxy","Payload":{}}
+[2020/06/02 12:49:14 CST] [DEBG] (ngrok/log.(*PrefixLogger).Debug:79) [ctl:26cf9f83] Waiting to read message
+[2020/06/02 12:49:14 CST] [DEBG] (ngrok/log.(*PrefixLogger).Debug:79) [ctl:26cf9f83] Reading message with length: 117
+[2020/06/02 12:49:14 CST] [DEBG] (ngrok/log.(*PrefixLogger).Debug:79) [ctl:26cf9f83] Read message {"Type":"NewTunnel","Payload":{"ReqId":"d48863d93412ab40","Url":"http://test.ngrok.me","Protocol":"http","Error":""}}
+[2020/06/02 12:49:14 CST] [INFO] (ngrok/log.(*PrefixLogger).Info:83) [client] Tunnel established at http://test.ngrok.me
+[2020/06/02 12:49:14 CST] [DEBG] (ngrok/log.(*PrefixLogger).Debug:79) [ctl:26cf9f83] Waiting to read message
+[2020/06/02 12:49:14 CST] [DEBG] (ngrok/log.(*PrefixLogger).Debug:79) [pxy:7306087c] New connection to: 127.0.0.1:4443
+[2020/06/02 12:49:14 CST] [DEBG] (ngrok/log.(*PrefixLogger).Debug:79) [pxy:7306087c] Writing message: {"Type":"RegProxy","Payload":{"ClientId":"0aab0a54dfed388c4c822a2c44f6618a"}}
+[2020/06/02 12:49:14 CST] [DEBG] (ngrok/log.(*PrefixLogger).Debug:79) [view] [term] Waiting for update
+[2020/06/02 12:49:14 CST] [DEBG] (ngrok/log.(*PrefixLogger).Debug:79) [pxy:7306087c] Waiting to read message
+[2020/06/02 12:49:34 CST] [DEBG] (ngrok/log.(*PrefixLogger).Debug:79) [ctl:26cf9f83] Writing message: {"Type":"Ping","Payload":{}}
+[2020/06/02 12:49:34 CST] [DEBG] (ngrok/log.(*PrefixLogger).Debug:79) [ctl:26cf9f83] Reading message with length: 28
+[2020/06/02 12:49:34 CST] [DEBG] (ngrok/log.(*PrefixLogger).Debug:79) [ctl:26cf9f83] Read message {"Type":"Pong","Payload":{}}
+[2020/06/02 12:49:34 CST] [DEBG] (ngrok/log.(*PrefixLogger).Debug:79) [ctl:26cf9f83] Waiting to read message
+[2020/06/02 12:49:54 CST] [DEBG] (ngrok/log.(*PrefixLogger).Debug:79) [ctl:26cf9f83] Writing message: {"Type":"Ping","Payload":{}}
+[2020/06/02 12:49:54 CST] [DEBG] (ngrok/log.(*PrefixLogger).Debug:79) [ctl:26cf9f83] Reading message with length: 28
+[2020/06/02 12:49:54 CST] [DEBG] (ngrok/log.(*PrefixLogger).Debug:79) [ctl:26cf9f83] Read message {"Type":"Pong","Payload":{}}
+[2020/06/02 12:49:54 CST] [DEBG] (ngrok/log.(*PrefixLogger).Debug:79) [ctl:26cf9f83] Waiting to read message
+[2020/06/02 12:50:14 CST] [DEBG] (ngrok/log.(*PrefixLogger).Debug:79) [ctl:26cf9f83] Writing message: {"Type":"Ping","Payload":{}}
+[2020/06/02 12:50:14 CST] [DEBG] (ngrok/log.(*PrefixLogger).Debug:79) [ctl:26cf9f83] Reading message with length: 28
+[2020/06/02 12:50:14 CST] [DEBG] (ngrok/log.(*PrefixLogger).Debug:79) [ctl:26cf9f83] Read message {"Type":"Pong","Payload":{}}
+[2020/06/02 12:50:14 CST] [DEBG] (ngrok/log.(*PrefixLogger).Debug:79) [ctl:26cf9f83] Waiting to read message
+[2020/06/02 12:50:34 CST] [DEBG] (ngrok/log.(*PrefixLogger).Debug:79) [ctl:26cf9f83] Writing message: {"Type":"Ping","Payload":{}}
+[2020/06/02 12:50:34 CST] [DEBG] (ngrok/log.(*PrefixLogger).Debug:79) [ctl:26cf9f83] Reading message with length: 28
+[2020/06/02 12:50:34 CST] [DEBG] (ngrok/log.(*PrefixLogger).Debug:79) [ctl:26cf9f83] Read message {"Type":"Pong","Payload":{}}
+[2020/06/02 12:50:34 CST] [DEBG] (ngrok/log.(*PrefixLogger).Debug:79) [ctl:26cf9f83] Waiting to read message
+[2020/06/02 12:50:54 CST] [DEBG] (ngrok/log.(*PrefixLogger).Debug:79) [ctl:26cf9f83] Writing message: {"Type":"Ping","Payload":{}}
+[2020/06/02 12:50:54 CST] [DEBG] (ngrok/log.(*PrefixLogger).Debug:79) [ctl:26cf9f83] Reading message with length: 28
+[2020/06/02 12:50:54 CST] [DEBG] (ngrok/log.(*PrefixLogger).Debug:79) [ctl:26cf9f83] Read message {"Type":"Pong","Payload":{}}
+[2020/06/02 12:50:54 CST] [DEBG] (ngrok/log.(*PrefixLogger).Debug:79) [ctl:26cf9f83] Waiting to read message
+[2020/06/02 12:51:14 CST] [DEBG] (ngrok/log.(*PrefixLogger).Debug:79) [ctl:26cf9f83] Writing message: {"Type":"Ping","Payload":{}}
+[2020/06/02 12:51:14 CST] [DEBG] (ngrok/log.(*PrefixLogger).Debug:79) [ctl:26cf9f83] Reading message with length: 28
+[2020/06/02 12:51:14 CST] [DEBG] (ngrok/log.(*PrefixLogger).Debug:79) [ctl:26cf9f83] Read message {"Type":"Pong","Payload":{}}
+[2020/06/02 12:51:14 CST] [DEBG] (ngrok/log.(*PrefixLogger).Debug:79) [ctl:26cf9f83] Waiting to read message
+[2020/06/02 12:51:34 CST] [DEBG] (ngrok/log.(*PrefixLogger).Debug:79) [ctl:26cf9f83] Writing message: {"Type":"Ping","Payload":{}}
+[2020/06/02 12:51:34 CST] [DEBG] (ngrok/log.(*PrefixLogger).Debug:79) [ctl:26cf9f83] Reading message with length: 28
+[2020/06/02 12:51:34 CST] [DEBG] (ngrok/log.(*PrefixLogger).Debug:79) [ctl:26cf9f83] Read message {"Type":"Pong","Payload":{}}
+[2020/06/02 12:51:34 CST] [DEBG] (ngrok/log.(*PrefixLogger).Debug:79) [ctl:26cf9f83] Waiting to read message
+[2020/06/02 12:51:54 CST] [DEBG] (ngrok/log.(*PrefixLogger).Debug:79) [ctl:26cf9f83] Writing message: {"Type":"Ping","Payload":{}}
+[2020/06/02 12:51:54 CST] [DEBG] (ngrok/log.(*PrefixLogger).Debug:79) [ctl:26cf9f83] Reading message with length: 28
+[2020/06/02 12:51:54 CST] [DEBG] (ngrok/log.(*PrefixLogger).Debug:79) [ctl:26cf9f83] Read message {"Type":"Pong","Payload":{}}
+[2020/06/02 12:51:54 CST] [DEBG] (ngrok/log.(*PrefixLogger).Debug:79) [ctl:26cf9f83] Waiting to read message
+[2020/06/02 12:52:14 CST] [DEBG] (ngrok/log.(*PrefixLogger).Debug:79) [ctl:26cf9f83] Writing message: {"Type":"Ping","Payload":{}}
+[2020/06/02 12:52:14 CST] [DEBG] (ngrok/log.(*PrefixLogger).Debug:79) [ctl:26cf9f83] Reading message with length: 28
+[2020/06/02 12:52:14 CST] [DEBG] (ngrok/log.(*PrefixLogger).Debug:79) [ctl:26cf9f83] Read message {"Type":"Pong","Payload":{}}
+[2020/06/02 12:52:14 CST] [DEBG] (ngrok/log.(*PrefixLogger).Debug:79) [ctl:26cf9f83] Waiting to read message
+[2020/06/02 12:52:34 CST] [DEBG] (ngrok/log.(*PrefixLogger).Debug:79) [ctl:26cf9f83] Writing message: {"Type":"Ping","Payload":{}}
+[2020/06/02 12:52:34 CST] [DEBG] (ngrok/log.(*PrefixLogger).Debug:79) [ctl:26cf9f83] Reading message with length: 28
+[2020/06/02 12:52:34 CST] [DEBG] (ngrok/log.(*PrefixLogger).Debug:79) [ctl:26cf9f83] Read message {"Type":"Pong","Payload":{}}
+[2020/06/02 12:52:34 CST] [DEBG] (ngrok/log.(*PrefixLogger).Debug:79) [ctl:26cf9f83] Waiting to read message
+[2020/06/02 12:52:54 CST] [DEBG] (ngrok/log.(*PrefixLogger).Debug:79) [ctl:26cf9f83] Writing message: {"Type":"Ping","Payload":{}}
+[2020/06/02 12:52:54 CST] [DEBG] (ngrok/log.(*PrefixLogger).Debug:79) [ctl:26cf9f83] Reading message with length: 28
+[2020/06/02 12:52:54 CST] [DEBG] (ngrok/log.(*PrefixLogger).Debug:79) [ctl:26cf9f83] Read message {"Type":"Pong","Payload":{}}
+[2020/06/02 12:52:54 CST] [DEBG] (ngrok/log.(*PrefixLogger).Debug:79) [ctl:26cf9f83] Waiting to read message
+[2020/06/02 12:53:14 CST] [DEBG] (ngrok/log.(*PrefixLogger).Debug:79) [ctl:26cf9f83] Writing message: {"Type":"Ping","Payload":{}}
+[2020/06/02 12:53:14 CST] [DEBG] (ngrok/log.(*PrefixLogger).Debug:79) [ctl:26cf9f83] Reading message with length: 28
+[2020/06/02 12:53:14 CST] [DEBG] (ngrok/log.(*PrefixLogger).Debug:79) [ctl:26cf9f83] Read message {"Type":"Pong","Payload":{}}
+[2020/06/02 12:53:14 CST] [DEBG] (ngrok/log.(*PrefixLogger).Debug:79) [ctl:26cf9f83] Waiting to read message
+[2020/06/02 12:53:34 CST] [DEBG] (ngrok/log.(*PrefixLogger).Debug:79) [ctl:26cf9f83] Writing message: {"Type":"Ping","Payload":{}}
+[2020/06/02 12:53:34 CST] [DEBG] (ngrok/log.(*PrefixLogger).Debug:79) [ctl:26cf9f83] Reading message with length: 28
+[2020/06/02 12:53:34 CST] [DEBG] (ngrok/log.(*PrefixLogger).Debug:79) [ctl:26cf9f83] Read message {"Type":"Pong","Payload":{}}
+[2020/06/02 12:53:34 CST] [DEBG] (ngrok/log.(*PrefixLogger).Debug:79) [ctl:26cf9f83] Waiting to read message
+[2020/06/02 12:53:54 CST] [DEBG] (ngrok/log.(*PrefixLogger).Debug:79) [ctl:26cf9f83] Writing message: {"Type":"Ping","Payload":{}}
+[2020/06/02 12:53:54 CST] [DEBG] (ngrok/log.(*PrefixLogger).Debug:79) [ctl:26cf9f83] Reading message with length: 28
+[2020/06/02 12:53:54 CST] [DEBG] (ngrok/log.(*PrefixLogger).Debug:79) [ctl:26cf9f83] Read message {"Type":"Pong","Payload":{}}
+[2020/06/02 12:53:54 CST] [DEBG] (ngrok/log.(*PrefixLogger).Debug:79) [ctl:26cf9f83] Waiting to read message
+[2020/06/02 12:54:05 CST] [EROR] (ngrok/log.(*PrefixLogger).Error:91) [pxy:7306087c] Server failed to write StartProxy: read tcp 127.0.0.1:57260->127.0.0.1:4443: wsarecv: An existing connection was forcibly closed by the remote host.
+[2020/06/02 12:54:05 CST] [EROR] (ngrok/log.Error:120) control recovering from failure read tcp 127.0.0.1:57259->127.0.0.1:4443: wsarecv: An existing connection was forcibly closed by the remote host.
+[2020/06/02 12:54:05 CST] [INFO] (ngrok/log.Info:112) Waiting 1 seconds before reconnecting

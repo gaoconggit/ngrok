@@ -42,6 +42,7 @@ Add the following lines to /etc/hosts:
 
 Run ngrokd with the following options:
 
+    .\bin\ngrokd -domain ngrok.me
     ./bin/ngrokd -domain ngrok.me
 
 Create an ngrok configuration file, "debug.yml" with the following contents:
