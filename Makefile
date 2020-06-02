@@ -1,17 +1,19 @@
 .PHONY: default server client deps fmt clean all release-all assets client-assets server-assets contributors
-export GOPATH:=$(shell pwd)
+
 
 BUILDTAGS=debug
 default: all
 
 deps: assets
-	go get -tags "%BUILDTAGS%" -d -v ngrok/...
+	set GOPATH=%cd%
+	go get -tags "$(BUILDTAGS)" -d -v ngrok/...
 
 server: deps
-	go install -tags "debug" ngrok/main/ngrokd
+	go install -tags "$(BUILDTAGS)" ngrok/main/ngrokd
 
 test:
-	echo '$(BUILDTAGS)'
+	set GOPATH=%cd%
+	go get -tags "$(BUILDTAGS)" -d -v ngrok/...
 
 fmt:
 	go fmt ngrok/...
