@@ -1,3 +1,12 @@
+需要实现的功能
+1. token 认证
+2. 按流量收费
+3. 按时长收费
+4. 官网
+5. 销售公众号
+6. 销售小程序
+……
+
 [![Build
 status](https://travis-ci.org/inconshreveable/ngrok.svg)](https://travis-ci.org/inconshreveable/ngrok)
 
@@ -23,6 +32,7 @@ ngrok 1.x is no longer developed, supported or maintained by its author, except 
 2. All issues against this repository are for 1.x only, any issues for 2.x will be closed.
 3. No new features will be added. Any pull requests with new features will be closed. Please fork the project instead.
 4. Pull requests fixing existing bugs or improving documentation are welcomed.
+
 
 #### The ngrok 1.x hosted service
 
