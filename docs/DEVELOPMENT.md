@@ -55,7 +55,7 @@ Create an ngrok configuration file, "debug.yml" with the following contents:
 
 
 Then run ngrok with either of these commands:
-
+     .\bin\ngrok -config=debug.yml -log=ngrok.log start-all
     ./bin/ngrok -config=debug.yml -log=ngrok.log start test
     ./bin/ngrok -config=debug.yml -log=ngrok.log -subdomain=test 8080
 
