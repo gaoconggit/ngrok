@@ -1,6 +1,6 @@
-auth_token: e10adc3949ba59abbe56e057f20f883e
+auth_token: e10adc3949ba59abbe56e057f20f883
 server_addr: ngrok.me:4443
 tunnels:
   test:
     proto:
-      http: 8080
+      http: "sg.coolfen.com:80"

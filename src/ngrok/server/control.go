@@ -1,14 +1,12 @@
 package server
 
 import (
-	"bufio"
 	"fmt"
 	"io"
 	"ngrok/conn"
 	"ngrok/msg"
 	"ngrok/util"
 	"ngrok/version"
-	"os"
 	"runtime/debug"
 	"strings"
 	"time"
@@ -83,31 +81,31 @@ func NewControl(ctlConn conn.Conn, authMsg *msg.Auth) {
 		_ = msg.WriteMsg(ctlConn, &msg.AuthResp{Error: e.Error()})
 		ctlConn.Close()
 	}
-	readLine := func(token string, filename string) (bool, error) {
+	// readLine := func(token string, filename string) (bool, error) {
 
-		if token == "" {
-			return false, nil
-		}
-		f, err := os.Open(filename)
-		if err != nil {
-			return false, err
-		}
-		buf := bufio.NewReader(f)
-		for {
-			line, err := buf.ReadString('\n')
-			line = strings.TrimSpace(line)
-			if line == token {
-				return true, nil
-			}
-			if err != nil {
-				if err == io.EOF {
-					return false, nil
-				}
-				return false, err
-			}
-		}
-		return false, nil
-	}
+	// 	if token == "" {
+	// 		return false, nil
+	// 	}
+	// 	f, err := os.Open(filename)
+	// 	if err != nil {
+	// 		return false, err
+	// 	}
+	// 	buf := bufio.NewReader(f)
+	// 	for {
+	// 		line, err := buf.ReadString('\n')
+	// 		line = strings.TrimSpace(line)
+	// 		if line == token {
+	// 			return true, nil
+	// 		}
+	// 		if err != nil {
+	// 			if err == io.EOF {
+	// 				return false, nil
+	// 			}
+	// 			return false, err
+	// 		}
+	// 	}
+	// 	return false, nil
+	// }
 	// register the clientid
 	c.id = authMsg.ClientId
 	if c.id == "" {
@@ -127,12 +125,12 @@ func NewControl(ctlConn conn.Conn, authMsg *msg.Auth) {
 		return
 	}
 
-	authd, err := readLine(authMsg.User, "D:\\project\\learn\\golang\\fork_ngrok\\ngrok\\authtokens.txt")
+	// authd, err := readLine(authMsg.User, "D:\\project\\learn\\golang\\fork_ngrok\\ngrok\\authtokens.txt")
 
-	if authd != true {
-		failAuth(fmt.Errorf("authtoken %s invalid", "is"))
-		return
-	}
+	// if authd != true {
+	// 	failAuth(fmt.Errorf("authtoken %s invalid", "is"))
+	// 	return
+	// }
 
 	// register the control
 	if replaced := controlRegistry.Add(c.id, c); replaced != nil {

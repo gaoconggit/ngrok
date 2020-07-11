@@ -1,3 +1,6 @@
+windows 环境先执行这个然后执行 make
+set GOPATH=%cd%
+
 [![Build
 status](https://travis-ci.org/inconshreveable/ngrok.svg)](https://travis-ci.org/inconshreveable/ngrok)
 
