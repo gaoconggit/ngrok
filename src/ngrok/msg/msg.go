@@ -39,6 +39,7 @@ type Auth struct {
 	OS        string
 	Arch      string
 	ClientId  string // empty for new sessions
+	ClientKey string // client key for authentication
 }
 
 // A server responds to an Auth message with an

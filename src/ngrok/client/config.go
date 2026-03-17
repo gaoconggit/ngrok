@@ -21,6 +21,7 @@ type Configuration struct {
 	InspectAddr        string                          `yaml:"inspect_addr,omitempty"`
 	TrustHostRootCerts bool                            `yaml:"trust_host_root_certs,omitempty"`
 	AuthToken          string                          `yaml:"auth_token,omitempty"`
+	ClientKey          string                          `yaml:"client_key,omitempty"`
 	Tunnels            map[string]*TunnelConfiguration `yaml:"tunnels,omitempty"`
 	LogTo              string                          `yaml:"-"`
 	Path               string                          `yaml:"-"`
@@ -137,6 +138,10 @@ func LoadConfiguration(opts *Options) (config *Configuration, err error) {
 	config.Path = configPath
 	if opts.authtoken != "" {
 		config.AuthToken = opts.authtoken
+	}
+
+	if opts.clientkey != "" {
+		config.ClientKey = opts.clientkey
 	}
 
 	switch opts.command {
