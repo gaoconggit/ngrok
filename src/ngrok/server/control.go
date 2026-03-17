@@ -101,6 +101,12 @@ func NewControl(ctlConn conn.Conn, authMsg *msg.Auth) {
 		return
 	}
 
+	// validate client key if the server requires one
+	if opts.clientKey != "" && authMsg.ClientKey != opts.clientKey {
+		failAuth(fmt.Errorf("Invalid client key"))
+		return
+	}
+
 	// register the control
 	if replaced := controlRegistry.Add(c.id, c); replaced != nil {
 		replaced.shutdown.WaitComplete()

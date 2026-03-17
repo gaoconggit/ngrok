@@ -49,6 +49,7 @@ type ClientModel struct {
 	serverAddr    string
 	proxyUrl      string
 	authToken     string
+	clientKey     string
 	tlsConfig     *tls.Config
 	tunnelConfig  map[string]*TunnelConfiguration
 	configPath    string
@@ -72,6 +73,9 @@ func newClientModel(config *Configuration, ctl mvc.Controller) *ClientModel {
 
 		// auth token
 		authToken: config.AuthToken,
+
+		// client key
+		clientKey: config.ClientKey,
 
 		// connection status
 		connStatus: mvc.ConnConnecting,
@@ -240,6 +244,7 @@ func (c *ClientModel) control() {
 		Version:   version.Proto,
 		MmVersion: version.MajorMinor(),
 		User:      c.authToken,
+		ClientKey: c.clientKey,
 	}
 
 	if err = msg.WriteMsg(ctlConn, auth); err != nil {
